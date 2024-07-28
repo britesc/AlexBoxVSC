@@ -5,7 +5,7 @@
     EARS Access Point.
     
     This class creates and destroys the EARS Access Point.
-    Version: 1.0.12
+    Version: 1.5.0
     Dated: 20240703
     Author: jB
 """
@@ -26,7 +26,7 @@ class Ears_AP:
         """
             Class __init__ function.
         """
-        self.ClassVersion = "1.0.12"
+        self.ClassVersion = "1.5.0"
         self.ClassName    = "Ears_AP"
         self.ssid         = "EARS::AP"
         self.password     = "EarsPassword"
