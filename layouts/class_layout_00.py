@@ -21,8 +21,6 @@ from gui.core.colors import *
 from gui.widgets.label import Label
 import gui.fonts.freesans20 as freesans20
 
-from lib.utilities_filesystem import *
-
 # Define Class
 class Ears_LO_00:
 # Start Class Intrinsic Functions    
@@ -31,13 +29,8 @@ class Ears_LO_00:
         gc.enable()
         self.ClassVersion = "1.0.0"
         self.ClassName    = "Ears_LO_00"
-        self.ConfigName   = file_exists("config.json")
-        try:
-            refresh(ssd)                    # Initialise and clear display.
-            CWriter.set_textpos(ssd, 0, 0)  # Set Cursor to top/top
-        except OSError:
-            # Flash an LED
-            pass # TEMPORARY UNTIL WE GET NAVIGATION ON LINE
+        refresh(ssd)                    # Initialise and clear display.
+        CWriter.set_textpos(ssd, 0, 0)  # Set Cursor to top/top        
 
     def __str__(self) -> str:
         """ The __str__ Function """
@@ -64,25 +57,17 @@ class Ears_LO_00:
             
             Returns Nothing
         """
-        try:
-            wri = CWriter(ssd, freesans20, RED, BLACK, verbose=False)
-            wri.set_clip(True, True, False)
-            Label(wri, 24, 55, 'Equipment & Ammunition')
-            Label(wri, 44, 90, 'Reporting System')
-            wri = CWriter(ssd, freesans20, GREEN, BLACK, verbose=False)
-            Label(wri, 84, 140, 'EARS')
-            if not self.ConfigName:
-                wri = CWriter(ssd, freesans20, WHITE, BLACK, verbose=False)
-                Label(wri, 140, 80, 'NOT CONFIGURED')
 
-            wri = CWriter(ssd, freesans20, BLUE, BLACK, verbose=False)
-            Label(wri, 210, 15, 'C JTB 2024 All Rights Reserved')
-            refresh(ssd)          
-        except OSError:
-            # Flash an LED
-            pass # TEMPORARY UNTIL WE GET NAVIGATION ON LINE
-        finally:
-            gc.collect()
+        wri = CWriter(ssd, freesans20, RED, BLACK, verbose=False)
+        wri.set_clip(True, True, False)
+        Label(wri, 24, 55, 'Equipment & Ammunition')
+        Label(wri, 44, 90, 'Reporting System')
+        wri = CWriter(ssd, freesans20, GREEN, BLACK, verbose=False)
+        Label(wri, 84, 140, 'EARS')
+        wri = CWriter(ssd, freesans20, BLUE, BLACK, verbose=False)
+        Label(wri, 210, 15, 'C JTB 2024 All Rights Reserved')
+        refresh(ssd)
+        gc.collect()
 
 
 if __name__ == "__main__":
