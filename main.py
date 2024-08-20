@@ -13,7 +13,8 @@ import gc
 
 # Declare Application Specific Imports
 from lib.version_info import *
-from layouts import class_layout_00 as cl_00
+# from layouts import class_layout_00 as cl_00
+import gui.includes.inc_gui_display
 
 """
     Priority
@@ -32,8 +33,6 @@ def main() -> None:
         
         # Priority 10
         print("main.py - Setting Up Disply\n")
-        myLCD = cl_00.Ears_LO_00()
-        myLCD.get_display()
         
         # Priority 38
         print("main.py - Creating Core 1 Thread\n")
