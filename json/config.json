@@ -3,12 +3,13 @@
       "origin":{
          "version":"1.0.0",
          "userzap":"",
+         "hash":"",
          "date":""
       },
       "user":{
-         "version":"1.0.0",
-         "userzap":"NO1234",
-         "date":"20240814"
+         "version":"",
+         "userzap":"",
+         "date":""
       },
       "usage":{
          "pers":0,

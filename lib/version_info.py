@@ -7,12 +7,15 @@
 """
     Version String to be updated after each development.
 """
-VersionMajor  = 1
-VersionMinor  = 5
-VersionBuild  = 0
-VersionDev    = 10000
-VersionString = f"{VersionMajor}.{VersionMinor}.{VersionBuild}.{VersionDev}"
+EARS = {
+    "VersionMajor"  : 1,
+    "VersionMinor"  : 5,
+    "VersionBuild"  : 0,
+    "VersionDev"    : 10001,
+    "AppName"       : "EARS",
+    "AppType"       : ["Personal","Squad","Section","PLatoon"],
+    "ConfigVersion" : "1.0.0",
+    "CFData"        : {},
+    }
 
-AppName       = "EARS"
-AppType       = ["Personal","Squad","Section","PLatoon"]
 
