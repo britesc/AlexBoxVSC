@@ -1,0 +1,29 @@
+{
+   "menu":{
+      "origin":{
+         "version":"1.0.0",
+         "lang":"en-gb"
+      },
+      "100":{
+         "heading":"Main",
+         "icon":"main.565",
+         "headings_list":"{'System', 'Config'}",
+         "icons_list":"{'system.565', 'config.565'}",
+         "action_list":"{'101','103'}"
+      },
+      "101":{
+         "heading":"System",
+         "icon":"system.565",      
+         "headings_list":"{'Return','System Temp','Battery Status','Information','Screen Test'}",
+         "icons_list":"{'return.565','cpu_temp.565', 'power.565', 'info.565', 's-test.565'}",
+         "action_list":"{'100','1001','1002','000','1003'}"
+      },
+      "103":{
+         "heading":"Config",
+         "icon":"config.565",      
+         "headings_list":"{'Return','System Info','OS Info'}",
+         "icons_list":"{'return.565','cpu_temp.565', 'power.565'}",
+         "action_list":"{'101','1004','1005'}"
+      } 
+   }
+}

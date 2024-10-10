@@ -1,0 +1,13 @@
+Each screen is given a number starting from 1000 onwards.
+It may be possible if there are 9 main topics or less to sub name them depending on their parrent.
+Screens are obtainable by the 4 numeric code used in the menus.json action lists
+
+Currently Screens are held under:
+    gui.layouts.screens and are as follows
+    screen_1001.py - Internal Temperature
+    screen_1002-py - Power / UPS Status
+    screen_1003.py - Screen Test
+    screen_1004.py - System Info and Serial Number
+    screen_1005.py - Internal RTC Display
+    screen_1006.py
+
